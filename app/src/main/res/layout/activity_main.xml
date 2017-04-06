@@ -1,0 +1,800 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="rpuls.yahtzeesheets.MainActivity">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:padding="4dp">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/text_player"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:text="Name"
+                    android:textColor="@android:color/black"
+                    android:textScaleX="0.8"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editTextP1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:background="@android:color/transparent"
+                    android:ems="2"
+                    android:fontFamily="casual"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/payer1"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="player1"/>
+
+                <EditText
+                    android:id="@+id/editTextP2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:background="@android:color/transparent"
+                    android:ems="2"
+                    android:fontFamily="casual"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/payer2"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="player2"/>
+
+                <EditText
+                    android:id="@+id/editTextP3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:background="@android:color/transparent"
+                    android:ems="2"
+                    android:fontFamily="casual"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/payer3"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textOnes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:text="⚀"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editTextP1Ones"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/payer1"
+                    android:fontFamily="casual"
+                    android:textSize="18sp"
+                    android:ems="2"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textStyle="bold"
+                    android:hint="0"/>
+
+                <EditText
+                    android:id="@+id/editTextP2Ones"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/payer2"
+                    android:fontFamily="casual"
+                    android:textSize="18sp"
+                    android:ems="2"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textStyle="bold"
+                    android:hint="0"/>
+
+                <EditText
+                    android:id="@+id/editTextP3Ones"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/payer3"
+                    android:fontFamily="casual"
+                    android:textSize="18sp"
+                    android:ems="2"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textTwos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:text="⚁"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:hint="0"/>
+
+                <EditText
+                    android:id="@+id/editTextP1Twos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/payer1"
+                    android:fontFamily="casual"
+                    android:textSize="18sp"
+                    android:ems="2"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textStyle="bold"
+                    android:hint="0"/>
+
+                <EditText
+                    android:id="@+id/editTextP2Twos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/payer2"
+                    android:fontFamily="casual"
+                    android:textSize="18sp"
+                    android:ems="2"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textStyle="bold"
+                    android:hint="0"/>
+
+                <EditText
+                    android:id="@+id/editTextP3Twos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/payer3"
+                    android:fontFamily="casual"
+                    android:textSize="18sp"
+                    android:ems="2"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textThrees"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:text="⚂"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editTextP1Threes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/payer1"
+                    android:fontFamily="casual"
+                    android:textSize="18sp"
+                    android:ems="2"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textStyle="bold"
+                    android:hint="0"/>
+
+                <EditText
+                    android:id="@+id/editTextP2Threes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/payer2"
+                    android:fontFamily="casual"
+                    android:textSize="18sp"
+                    android:ems="2"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textStyle="bold"
+                    android:hint="0"/>
+
+                <EditText
+                    android:id="@+id/editTextP3Threes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/payer3"
+                    android:fontFamily="casual"
+                    android:textSize="18sp"
+                    android:ems="2"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textStyle="bold"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textFours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:text="⚃"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editTextP1Fours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/payer1"
+                    android:fontFamily="casual"
+                    android:textSize="18sp"
+                    android:ems="2"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textStyle="bold"
+                    android:hint="0"/>
+
+                <EditText
+                    android:id="@+id/editTextP2Fours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/payer2"
+                    android:fontFamily="casual"
+                    android:textSize="18sp"
+                    android:ems="2"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textStyle="bold"
+                    android:hint="0"/>
+
+                <EditText
+                    android:id="@+id/editTextP3Fours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/payer3"
+                    android:fontFamily="casual"
+                    android:textSize="18sp"
+                    android:ems="2"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textStyle="bold"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textFives"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:text="⚄"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editTextP1Fives"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/payer1"
+                    android:fontFamily="casual"
+                    android:textSize="18sp"
+                    android:ems="2"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textStyle="bold"
+                    android:hint="0"/>
+
+                <EditText
+                    android:id="@+id/editTextP2Fives"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/payer2"
+                    android:fontFamily="casual"
+                    android:textSize="18sp"
+                    android:ems="2"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textStyle="bold"
+                    android:hint="0"/>
+
+                <EditText
+                    android:id="@+id/editTextP3Fives"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/payer3"
+                    android:fontFamily="casual"
+                    android:textSize="18sp"
+                    android:ems="2"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textStyle="bold"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textSixes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:text="⚅"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editTextP1Sixes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/payer1"
+                    android:fontFamily="casual"
+                    android:textSize="18sp"
+                    android:ems="2"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textStyle="bold"
+                    android:hint="0"/>
+
+                <EditText
+                    android:id="@+id/editTextP2Sixes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/payer2"
+                    android:fontFamily="casual"
+                    android:textSize="18sp"
+                    android:ems="2"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textStyle="bold"
+                    android:hint="0"/>
+
+                <EditText
+                    android:id="@+id/editTextP3Sixes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/payer3"
+                    android:fontFamily="casual"
+                    android:textSize="18sp"
+                    android:ems="2"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textStyle="bold"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textUpperScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:text="Score"
+                    android:textColor="@android:color/black"
+                    android:textScaleX="0.8"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textUpperScoreP1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="0/63"
+                    android:textColor="@color/payer1"
+                    android:fontFamily="casual"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/textUpperScoreP2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="0/63"
+                    android:textColor="@color/payer2"
+                    android:fontFamily="casual"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/textUpperScoreP3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text=""
+                    android:textColor="@color/payer3"
+                    android:fontFamily="casual"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textBonus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:text="Bonus"
+                    android:textColor="@android:color/black"
+                    android:textScaleX="0.8"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textBonusP1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="0"
+                    android:textColor="@color/payer1"
+                    android:fontFamily="casual"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/textBonusP2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="0"
+                    android:textColor="@color/payer2"
+                    android:fontFamily="casual"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/textBonusP3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text=""
+                    android:textColor="@color/payer3"
+                    android:fontFamily="casual"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textThreeOfAKind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:text="3×"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editTextP1ThreeOfAKind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/payer1"
+                    android:fontFamily="casual"
+                    android:textSize="18sp"
+                    android:ems="2"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textStyle="bold"
+                    android:hint="0"/>
+
+                <EditText
+                    android:id="@+id/editTextP2ThreeOfAKind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/payer2"
+                    android:fontFamily="casual"
+                    android:textSize="18sp"
+                    android:ems="2"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textStyle="bold"
+                    android:hint="0"/>
+
+                <EditText
+                    android:id="@+id/editTextP3ThreeOfAKind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/payer3"
+                    android:fontFamily="casual"
+                    android:textSize="18sp"
+                    android:ems="2"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textStyle="bold"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textFourOfAKind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:text="4×"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editTextP1FourOfAKind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/payer1"
+                    android:fontFamily="casual"
+                    android:textSize="18sp"
+                    android:ems="2"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textStyle="bold"
+                    android:hint="0"/>
+
+                <EditText
+                    android:id="@+id/editTextP2FoureOfAKind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/payer2"
+                    android:fontFamily="casual"
+                    android:textSize="18sp"
+                    android:ems="2"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textStyle="bold"
+                    android:hint="0"/>
+
+                <EditText
+                    android:id="@+id/editTextP3FourOfAKind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/payer3"
+                    android:fontFamily="casual"
+                    android:textSize="18sp"
+                    android:ems="2"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textStyle="bold"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textFullHouse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:text="FH"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editTextP1FullHouse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/payer1"
+                    android:fontFamily="casual"
+                    android:textSize="18sp"
+                    android:ems="2"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textStyle="bold"
+                    android:hint="0"/>
+
+                <EditText
+                    android:id="@+id/editTextP2FullHouse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/payer2"
+                    android:fontFamily="casual"
+                    android:textSize="18sp"
+                    android:ems="2"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textStyle="bold"
+                    android:hint="0"/>
+
+                <EditText
+                    android:id="@+id/editTextP3FullHouse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/payer3"
+                    android:fontFamily="casual"
+                    android:textSize="18sp"
+                    android:ems="2"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textStyle="bold"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textSmallStreet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:text="SS"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textLargeStreel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:text="LS"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textYahtzee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:text="Yahtzee"
+                    android:textColor="@android:color/black"
+                    android:textScaleX="0.6"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textChance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:text="Chance"
+                    android:textColor="@android:color/black"
+                    android:textScaleX="0.7"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:text="Score"
+                    android:textColor="@android:color/black"
+                    android:textScaleX="0.8"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+        </TableLayout>
+
+</RelativeLayout>
